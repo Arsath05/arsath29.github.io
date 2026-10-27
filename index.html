@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohammed Arsath | Marketing & HR Portfolio</title>
+<meta name="description" content="Mohammed Arsath, PGDM (Marketing & HR) candidate with experience in digital marketing, marketing analytics, lead generation and talent acquisition.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%233b3bff%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Georgia%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22white%22>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f4f8;--surface:#ffffff;--ink:#101828;--muted:#4a5568;--line:#d5dae4;
+  --accent:#3b3bff;--accent-ink:#ffffff;--mark:#ffd23f;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0e1220;--surface:#171c2e;--ink:#eef1f8;--muted:#a9b2c6;--line:#2a3150;--accent:#8c8cff;--accent-ink:#0e1220;--mark:#ffd23f}
+}
+:root[data-theme="dark"]{--bg:#0e1220;--surface:#171c2e;--ink:#eef1f8;--muted:#a9b2c6;--line:#2a3150;--accent:#8c8cff;--accent-ink:#0e1220;--mark:#ffd23f}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:20px;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;overflow-x:auto}
+nav b{font-family:var(--head);font-size:1.05rem;white-space:nowrap}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font:600 .95rem var(--head)}
+nav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 48px}
+.hero h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:800;letter-spacing:-.03em}
+.hero p.role{font:500 clamp(1.1rem,2.5vw,1.45rem)/1.4 var(--head);margin:18px 0 0;max-width:34ch}
+.hero p.role span{background:linear-gradient(transparent 58%,var(--mark) 58%);padding:0 2px;color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{font:700 1rem var(--head);padding:12px 20px;border-radius:8px;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-2px)}
+/* timeline strip */
+.tl{margin-top:56px}
+.tl h2{font-size:1rem;color:var(--muted);font-weight:600;margin-bottom:10px}
+.tl-scroll{overflow-x:auto;padding-bottom:6px}
+.tl-grid{display:grid;grid-template-columns:repeat(13,minmax(44px,1fr));gap:6px;min-width:640px}
+.tl-m{font:600 .72rem var(--head);color:var(--muted);text-align:left;border-left:1px solid var(--line);padding-left:4px}
+.tl-bar{font:700 .85rem/1.2 var(--head);padding:10px 12px;border-radius:8px;background:var(--surface);border:2px solid var(--ink);min-height:48px;display:flex;align-items:center;transform-origin:left}
+.tl-bar.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+@media (prefers-reduced-motion:no-preference){
+  .tl-bar{animation:grow .8s cubic-bezier(.2,.7,.2,1) both}
+  .tl-bar:nth-of-type(2){animation-delay:.12s}.tl-bar:nth-of-type(3){animation-delay:.24s}.tl-bar:nth-of-type(4){animation-delay:.36s}
+  @keyframes grow{from{transform:scaleX(0);opacity:0}to{transform:scaleX(1);opacity:1}}
+}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:28px;letter-spacing:-.02em}
+.about{display:grid;gap:32px;grid-template-columns:3fr 2fr}
+.about p{margin:0 0 1em;max-width:62ch}
+.edu{display:grid;gap:14px;align-content:start}
+.edu div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.edu b{font-family:var(--head);display:block}
+.edu small{color:var(--muted);font-size:.95rem}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--line)}
+.job:first-of-type{padding-top:0}
+.job time{font:600 .95rem var(--head);color:var(--muted)}
+.job h3{font-size:1.3rem}
+.job .where{font:500 1rem var(--head);color:var(--accent);margin:2px 0 10px}
+.job ul,.plain{margin:0;padding-left:1.1em}
+.job li,.plain li{margin-bottom:.4em;max-width:68ch}
+.proj{display:grid;gap:20px;grid-template-columns:1fr 1fr}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{font-size:1.25rem;margin-bottom:12px}
+.card ul{margin:0 0 16px;padding-left:1.1em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{font:600 .85rem var(--head);padding:4px 10px;border-radius:999px;border:1.5px solid var(--ink);margin:0}
+.skills{display:grid;gap:28px;grid-template-columns:1fr 1fr}
+.skills h3{font-size:1.1rem;margin-bottom:12px}
+.two{display:grid;gap:40px;grid-template-columns:1fr 1fr}
+.two h3{font-size:1.1rem;margin-bottom:12px}
+.contact p{max-width:52ch;margin:0 0 20px}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (max-width:720px){
+  body{font-size:17px}
+  .about,.proj,.skills,.two{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr}
+  .hero{padding-top:48px}
+}
+
+/* Violet / obsidian portfolio refresh */
+:root{
+  color-scheme:dark;
+  --bg:#08070d;
+  --surface:#12101c;
+  --ink:#f7f3ff;
+  --muted:#b4abc9;
+  --line:rgba(190,154,255,.19);
+  --accent:#a855f7;
+  --accent-ink:#fff;
+  --mark:#c4a1ff;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Inter","Segoe UI",system-ui,sans-serif;
+}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{
+  background:
+    radial-gradient(ellipse at 12% 0%,rgba(126,34,206,.18),transparent 34rem),
+    radial-gradient(ellipse at 92% 28%,rgba(91,33,182,.12),transparent 30rem),
+    var(--bg);
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.16;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,black,transparent 80%);
+}
+.wrap{max-width:1120px;padding-inline:28px}
+nav{
+  background:rgba(8,7,13,.78);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{padding-top:17px;padding-bottom:17px}
+nav b{letter-spacing:-.035em;font-size:1.1rem}
+nav b::before{content:"A";display:inline-grid;place-items:center;width:30px;height:30px;margin-right:10px;border-radius:10px;background:linear-gradient(135deg,#c084fc,#7c3aed);color:#fff;font-size:.95rem;box-shadow:0 0 24px rgba(168,85,247,.3)}
+nav ul{gap:clamp(12px,2vw,26px)}
+nav a{font-size:.88rem;transition:color .2s ease}
+nav a:hover{color:#d8b4fe}
+.hero{position:relative;padding:clamp(76px,12vw,142px) 0 76px}
+.hero::after{
+  content:"";position:absolute;right:4%;top:15%;width:clamp(150px,25vw,310px);aspect-ratio:1;border:1px solid rgba(192,132,252,.2);border-radius:50%;
+  box-shadow:0 0 0 28px rgba(168,85,247,.025),0 0 0 58px rgba(168,85,247,.02),inset 0 0 70px rgba(168,85,247,.06);
+  pointer-events:none;animation:orbitPulse 7s ease-in-out infinite;
+}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{
+  max-width:900px;font-size:clamp(3.2rem,10vw,7.8rem);line-height:.92;letter-spacing:-.075em;
+  background:linear-gradient(105deg,#fff 8%,#e9d5ff 46%,#a855f7 92%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-wrap:balance;
+}
+.hero p.role{max-width:650px;color:#c9c0dc;font-size:clamp(1.1rem,2.4vw,1.55rem);margin-top:26px}
+.hero p.role span{background:linear-gradient(transparent 62%,rgba(168,85,247,.4) 62%);color:#fff}
+.cta{margin-top:34px;gap:14px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border:1px solid rgba(216,180,254,.32);border-radius:12px;padding:13px 20px;
+  background:rgba(255,255,255,.025);color:#f5eaff;font-size:.92rem;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease,background .25s ease;
+}
+.btn.main{background:linear-gradient(135deg,#a855f7,#7c3aed);border-color:transparent;color:white;box-shadow:0 10px 30px rgba(124,58,237,.22)}
+.btn:hover{transform:translateY(-4px);border-color:#c084fc;box-shadow:0 12px 32px rgba(168,85,247,.18)}
+.btn.main:hover{background:linear-gradient(135deg,#c084fc,#8b5cf6);box-shadow:0 14px 38px rgba(124,58,237,.35)}
+.tl{margin-top:76px;padding:22px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,rgba(25,19,39,.92),rgba(13,11,20,.88));box-shadow:0 24px 70px rgba(0,0,0,.16)}
+.tl h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.15em;color:#c4b5fd;margin-bottom:18px}
+.tl-grid{gap:8px}
+.tl-m{border-color:rgba(192,132,252,.25);font-size:.72rem}
+.tl-bar{border:1px solid rgba(192,132,252,.2);border-radius:10px;background:#1a1525;color:#e9ddff;font-size:.78rem;min-height:44px}
+.tl-bar.on{background:linear-gradient(110deg,#7c3aed,#a855f7);border-color:#a855f7;color:white}
+section{padding:clamp(58px,8vw,94px) 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.055em;margin-bottom:34px}
+section>.wrap>h2::after{content:"";display:block;width:54px;height:4px;border-radius:8px;margin-top:15px;background:linear-gradient(90deg,#a855f7,#d8b4fe)}
+.about{gap:clamp(28px,5vw,70px)}
+.about p{color:#c7bfd7;max-width:66ch}
+.edu div,.card{
+  position:relative;overflow:hidden;
+  background:linear-gradient(145deg,rgba(24,20,35,.95),rgba(14,12,21,.96));
+  border:1px solid var(--line);border-radius:18px;
+  transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease;
+}
+.edu div{padding:21px 22px}
+.edu div:hover,.card:hover{transform:translateY(-5px);border-color:rgba(192,132,252,.58);box-shadow:0 18px 45px rgba(0,0,0,.22),0 0 30px rgba(168,85,247,.07)}
+.edu b{font-size:1.02rem;margin-bottom:5px}
+.edu small{color:var(--muted)}
+.job{grid-template-columns:190px 1fr;gap:10px 38px;padding:30px 0;border-bottom:1px solid var(--line)}
+.job time{font-size:.83rem;letter-spacing:.025em;color:#c4b5fd;padding-top:5px}
+.job h3{font-size:1.35rem;letter-spacing:-.025em}
+.job .where{color:#c084fc;font-size:.95rem;margin:5px 0 12px}
+.job ul{color:#c9c1d7}
+.job li{padding-left:3px;margin-bottom:.55em}
+.job li::marker{color:#a855f7}
+.proj{gap:18px}
+.card{padding:clamp(22px,3vw,30px)}
+.card::before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,#7c3aed,#c084fc,transparent);opacity:.85}
+.card h3{font-size:1.3rem;letter-spacing:-.025em}
+.card ul:not(.tags){color:#c9c1d7}
+.tags{gap:8px}
+.tags li{border:1px solid rgba(192,132,252,.28);background:rgba(168,85,247,.08);color:#e9d5ff;font-size:.78rem;padding:5px 11px}
+.skills{gap:42px}
+.skills h3,.two h3{font-size:1.12rem;margin-bottom:16px}
+.two{gap:clamp(28px,6vw,80px)}
+.plain{color:#c9c1d7}
+.plain li{padding:.22rem 0}
+.plain li::marker{color:#a855f7}
+.contact p{color:#c9c1d7}
+footer{border-top:1px solid var(--line);color:#958aa9;font-size:.85rem}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes orbitPulse{0%,100%{transform:scale(1);opacity:.65}50%{transform:scale(1.06);opacity:1}}
+@media(max-width:720px){
+  .wrap{padding-inline:20px}
+  nav .wrap{gap:18px;align-items:flex-start;flex-direction:column}
+  nav ul{width:100%;padding-bottom:2px}
+  .hero{padding-top:72px}
+  .hero::after{right:-18%;top:10%;opacity:.55}
+  .tl{padding:15px;margin-top:54px}
+  .job{grid-template-columns:1fr;gap:7px}
+  .job time{padding:0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap">
+  <b>Mohammed Arsath</b>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#more">Credentials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>Mohammed Arsath</h1>
+  <p class="role">PGDM (Marketing &amp; HR) candidate who turns <span>campaign data</span> into customers and hires.</p>
+  <div class="cta">
+    <a class="btn main" href="#experience">See my experience</a>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+
+  <div class="tl" aria-label="Internship timeline from September 2025 to September 2026">
+    <h2>Four internships in thirteen months</h2>
+    <div class="tl-scroll"><div class="tl-grid">
+      <div class="tl-m" style="grid-column:1">Sep 25</div><div class="tl-m" style="grid-column:4">Dec 25</div><div class="tl-m" style="grid-column:7">Mar 26</div><div class="tl-m" style="grid-column:10">Jun 26</div><div class="tl-m" style="grid-column:13">Sep 26</div>
+      <div class="tl-bar" style="grid-column:1 / 4;grid-row:2">FacePrep · HR</div>
+      <div class="tl-bar on" style="grid-column:4 / 7;grid-row:3">BCBuzz · Business dev.</div>
+      <div class="tl-bar" style="grid-column:6 / 10;grid-row:4">V3 Data · Analytics</div>
+      <div class="tl-bar on" style="grid-column:12 / 14;grid-row:5">Aim Univ.</div>
+    </div></div>
+  </div>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap">
+  <h2>About</h2>
+  <div class="about">
+    <div>
+      <p>I’m pursuing a PGDM in Marketing &amp; HR with a computer science background. My internships have covered digital marketing, marketing analytics, lead generation and talent acquisition.</p>
+      <p>I’m looking for an entry-level role where I can drive customer acquisition, improve campaign performance and support business growth with data-driven insight and careful execution.</p>
+    </div>
+    <div class="edu">
+      <div><b>PGDM (Marketing &amp; HR)</b>Firebird Institute of Research in Management<br><small>2025–2027 (pursuing) · CGPA 9.29</small></div>
+      <div><b>B.Sc. Computer Science &amp; Applications</b>Sri Krishna College of Arts and Science<br><small>2022–2025 · CGPA 9.17</small></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Internship experience</h2>
+
+  <article class="job">
+    <time>Aug 2026 – Sep 2026</time>
+    <div><h3>Marketing Intern</h3><p class="where">Aim University</p>
+      <ul>
+        <li>Conducted market research, competitor analysis, lead generation and digital marketing activities.</li>
+        <li>Supported social media campaigns, promotional content creation and customer outreach, and analyzed marketing performance to improve engagement and brand visibility.</li>
+      </ul></div>
+  </article>
+
+  <article class="job">
+    <time>Feb 2026 – May 2026</time>
+    <div><h3>Marketing Analytics Intern</h3><p class="where">V3 Data Intelligence, Coimbatore</p>
+      <ul>
+        <li>Analyzed marketing data, tracked KPIs and used MS Excel dashboards to evaluate campaign performance.</li>
+        <li>Generated actionable insights to support data-driven strategies and improve ROI and marketing effectiveness.</li>
+      </ul></div>
+  </article>
+
+  <article class="job">
+    <time>Dec 2025 – Feb 2026</time>
+    <div><h3>Business Development &amp; Marketing Intern</h3><p class="where">BCBuzz Technologies, Coimbatore</p>
+      <ul>
+        <li>Generated 100+ qualified leads through market research, cold outreach and CRM tools.</li>
+        <li>Executed email marketing campaigns and supported sales funnel optimization to improve customer acquisition and conversions.</li>
+      </ul></div>
+  </article>
+
+  <article class="job">
+    <time>Sep 2025 – Nov 2025</time>
+    <div><h3>HR Intern, Recruitment &amp; Talent Acquisition</h3><p class="where">FacePrep, Coimbatore</p>
+      <ul>
+        <li>Managed end-to-end recruitment, including sourcing, screening and shortlisting 50+ candidates against job requirements.</li>
+        <li>Coordinated interviews, maintained recruitment databases, and supported onboarding and HR reporting (ATS basics).</li>
+      </ul></div>
+  </article>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Academic projects</h2>
+  <div class="proj">
+    <article class="card">
+      <h3>Railway Database Management System</h3>
+      <ul>
+        <li>Built a web-based DBMS to manage trains, schedules, routes and passenger information with a structured database design.</li>
+        <li>Implemented CRUD operations and optimized SQL queries for efficient retrieval, accuracy and reliable performance.</li>
+      </ul>
+      <ul class="tags"><li>Python</li><li>MySQL</li><li>SQL</li></ul>
+    </article>
+    <article class="card">
+      <h3>Language Translator Application</h3>
+      <ul>
+        <li>Applied NLP and machine learning concepts to build a translator.</li>
+        <li>Aligned with AI applications in marketing and automation.</li>
+      </ul>
+      <ul class="tags"><li>Python</li><li>Flask</li><li>TensorFlow</li></ul>
+    </article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Technical</h3>
+      <ul class="tags"><li>Python</li><li>SQL</li><li>MySQL</li><li>Java</li><li>C/C++</li><li>HTML</li><li>CSS</li><li>MS Excel</li></ul></div>
+    <div><h3>Professional</h3>
+      <ul class="tags"><li>Communication</li><li>Teamwork</li><li>Problem solving</li><li>Time management</li><li>Adaptability</li><li>Leadership</li><li>Analytical thinking</li><li>Interpersonal skills</li></ul></div>
+  </div>
+</div></section>
+
+<section id="more"><div class="wrap">
+  <h2>Credentials</h2>
+  <div class="two">
+    <div><h3>Certifications</h3>
+      <ul class="plain">
+        <li>AI for SEO, Coursera</li>
+        <li>Digital Marketing, Coursera</li>
+        <li>AI in Human Resources, NPTEL</li>
+        <li>Soft Skills Training, NPTEL</li>
+        <li>Marketing Analytics, NPTEL</li>
+      </ul></div>
+    <div><h3>Achievements</h3>
+      <ul class="plain">
+        <li>Secured a placement offer from Tata Consultancy Services (TCS) for the role of Ninja.</li>
+        <li>Received an offer from LTIMindtree for the role of Technical Assistant.</li>
+        <li>Completed Oracle RDBMS certification, strengthening database and SQL expertise.</li>
+      </ul></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p>I’m open to entry-level roles in marketing, marketing analytics and HR. Email is the fastest way to reach me.</p>
+  <div class="links">
+    <a class="btn main" href="mailto:mohammed1arsath@gmail.com">mohammed1arsath@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/mohammed-arsath-s-a0439428a" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="tel:+917639230618">7639230618</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Udumalpet, Tirupur, 642126 · © <span id="y">2026</span> Mohammed Arsath</div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+
+<script>
+(() => {
+  const sections = document.querySelectorAll('section, .tl, .edu div, .job, .card, .skills > div, .two > div');
+  sections.forEach(el => el.classList.add('reveal'));
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+  sections.forEach(el => observer.observe(el));
+
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  const targets = [...navLinks].map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+  const activeObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach(link => {
+        const active = link.getAttribute('href') === '#' + entry.target.id;
+        link.style.color = active ? '#d8b4fe' : '';
+        link.style.textShadow = active ? '0 0 18px rgba(168,85,247,.35)' : '';
+      });
+    });
+  }, { rootMargin: '-25% 0px -65% 0px' });
+  targets.forEach(target => activeObserver.observe(target));
+
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('pointerdown', () => {
+      btn.animate([{ transform: 'scale(1)' }, { transform: 'scale(.97)' }, { transform: 'scale(1)' }],
+        { duration: 220, easing: 'ease-out' });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
